@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Night's Embrace</title>
+<style>
+/* Base styling */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: linear-gradient(to bottom, #253e54, #1a2a3b);
+    color: #fffafa;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Heading styles */
+h1 {
+    color: #85bcf3;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+/* Bold words styling */
+.bold {
+    font-weight: bold;
+    color: rgb(179, 220, 233);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.bold:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px #85bcf3;
+    cursor: pointer;
+}
+
+/* Stanza separation */
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed rgba(133, 188, 243, 0.5);
+    padding-bottom: 10px;
+}
+
+/* Accessibility */
+section[aria-labelledby="poem-title"] {
+    padding-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="poem-title">The Night's Embrace</h1>
+
+<section aria-labelledby="poem-title">
+    <p>The <span class="bold">moon</span> shines bright, a glowing <span class="bold">star</span>,</p>
+    <p>It whispers secrets from <span class="bold">afar</span>.</p>
+    <p>The breeze is soft, it gently <span class="bold">blows</span>,</p>
+    <p>Through quiet woods where no one <span class="bold">knows</span>.</p>
+</section>
+
+<section aria-labelledby="poem-title">
+    <p>The night is still, the world in <span class="bold">sleep</span>,</p>
+    <p>A peaceful calm, a love so <span class="bold">deep</span>.</p>
+    <p>Stars twinkle high, a sparkling <span class="bold">glow</span>,</p>
+    <p>As dreams take flight and gently <span class="bold">flow</span>.</p>
+</section>
+
+</body>
+</html>
