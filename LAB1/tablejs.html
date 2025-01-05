@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Population Data</title>
+</head>
+<body>
+
+<h1>Population Data</h1>
+<!-- Create the table -->
+<table id="population-table" border="1">
+<thead>
+<tr>
+<th>Country</th>
+<th>Year</th>
+<th>Population</th>
+</tr>
+</thead>
+<tbody>
+<!-- Data will be inserted here by JavaScript -->
+</tbody>
+</table>
+
+<script>
+// JavaScript code
+const populationData = [
+{ country: "India", year: 1998, population: 85 },
+{ country: "India", year: 1999, population: 90 },
+{ country: "India", year: 2000, population: 100 },
+{ country: "USA", year: 1998, population: 30 },
+{ country: "USA", year: 1999, population: 35 },
+{ country: "USA", year: 2000, population: 40 },
+{ country: "UK", year: 1998, population: 25 },
+{ country: "UK", year: 1999, population: 30 },
+{ country: "UK", year: 2000, population: 35 }
+];
+
+// Get the table body
+const tableBody = document.querySelector("#population-table tbody");
+
+// Iterate through the populationData and add rows to the table
+populationData.forEach(data => {
+const row = document.createElement("tr");
+row.innerHTML = `<td>${data.country}</td><td>${data.year}</td><td>${data.population}</td>`;
+tableBody.appendChild(row);
+});
+</script>
+</body>
+</html>
+
