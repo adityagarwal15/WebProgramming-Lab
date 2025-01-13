@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Page Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .top-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .bottom-section {
+            margin-top: 20px;
+        }
+        .bottom-column {
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+        .badge-custom {
+            background-color: #6f42c1;
+            color: white;
+        }
+        .btn-custom {
+            background-color: #6610f2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Top Section -->
+        <div class="top-section text-center">
+            <h2>Top Section</h2>
+            <p>Add your input groups and badges here:</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                </div>
+                <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <button class="btn btn-custom btn-lg">Submit</button>
+            <span class="badge badge-custom ml-3">New Feature!</span>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section row">
+            <!-- Column 1 -->
+            <div class="col-md-4 bottom-column">
+                <h4>Column 1</h4>
+                <p>Input group with buttons:</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-success">Go</button>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block">Learn More</button>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-4 bottom-column">
+                <h4>Column 2</h4>
+                <p>Badges and buttons:</p>
+                <button class="btn btn-warning">
+                    Notifications <span class="badge badge-light">4</span>
+                </button>
+                <button class="btn btn-danger">
+                    Alerts <span class="badge badge-light">2</span>
+                </button>
+                <div class="mt-3">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark">Option 1</button>
+                        <button type="button" class="btn btn-dark">Option 2</button>
+                        <button type="button" class="btn btn-dark">Option 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-4 bottom-column">
+                <h4>Column 3</h4>
+                <p>Custom form controls:</p>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select an option:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+                <button class="btn btn-info btn-block">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

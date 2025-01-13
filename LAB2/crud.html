@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Management - CRUD Operations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Employee Management - CRUD Operations</h2>
+
+    <!-- Add Employee Form -->
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4>Add New Employee</h4>
+        </div>
+        <div class="card-body">
+            <form id="employeeForm">
+                <div class="form-group">
+                    <label for="empName">Name:</label>
+                    <input type="text" class="form-control" id="empName" placeholder="Enter employee name" required>
+                </div>
+                <div class="form-group">
+                    <label for="empEmail">Email:</label>
+                    <input type="email" class="form-control" id="empEmail" placeholder="Enter employee email" required>
+                </div>
+                <div class="form-group">
+                    <label for="empPosition">Position:</label>
+                    <input type="text" class="form-control" id="empPosition" placeholder="Enter employee position" required>
+                </div>
+                <div class="form-group">
+                    <label for="empSalary">Salary:</label>
+                    <input type="number" class="form-control" id="empSalary" placeholder="Enter employee salary" required>
+                </div>
+                <button type="button" class="btn btn-success" id="addEmployeeBtn">Add Employee</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Employee Table -->
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4>Employee List</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Simulated Employee Data (Frontend)
+    let employees = [];
+    let employeeId = 1;
+
+    // Function to add an employee
+    function addEmployee(name, email, position, salary) {
+        employees.push({ id: employeeId++, name, email, position, salary });
+        renderTable();
+    }
+
+    // Function to update employee data
+    function updateEmployee(id) {
+        const employee = employees.find(emp => emp.id === id);
+        const newName = prompt("Enter new name:", employee.name);
+        const newEmail = prompt("Enter new email:", employee.email);
+        const newPosition = prompt("Enter new position:", employee.position);
+        const newSalary = prompt("Enter new salary:", employee.salary);
+        if (newName && newEmail && newPosition && newSalary) {
+            employee.name = newName;
+            employee.email = newEmail;
+            employee.position = newPosition;
+            employee.salary = newSalary;
+            renderTable();
+        }
+    }
+
+    // Function to delete an employee
+    function deleteEmployee(id) {
+        employees = employees.filter(emp => emp.id !== id);
+        renderTable();
+    }
+
+    // Function to render employee table
+    function renderTable() {
+        const table = document.getElementById('employeeTable');
+        table.innerHTML = '';
+        employees.forEach(employee => {
+            const row = `
+                <tr>
+                    <td>${employee.id}</td>
+                    <td>${employee.name}</td>
+                    <td>${employee.email}</td>
+                    <td>${employee.position}</td>
+                    <td>${employee.salary}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="updateEmployee(${employee.id})">Edit</button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(${employee.id})">Delete</button>
+                    </td>
+                </tr>
+            `;
+            table.innerHTML += row;
+        });
+    }
+
+    // Event Listener for Adding Employee
+    document.getElementById('addEmployeeBtn').addEventListener('click', function () {
+        const name = document.getElementById('empName').value;
+        const email = document.getElementById('empEmail').value;
+        const position = document.getElementById('empPosition').value;
+        const salary = document.getElementById('empSalary').value;
+        if (name && email && position && salary) {
+            addEmployee(name, email, position, parseFloat(salary));
+            document.getElementById('employeeForm').reset();
+        } else {
+            alert('Please fill out all fields!');
+        }
+    });
+</script>
+
+</body>
+</html>
+

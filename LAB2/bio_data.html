@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Bio-Data Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Student Bio-Data Form</h2>
+    <form>
+        <!-- Personal Information -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+                <label class="form-check-label" for="other">Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Academic Information -->
+        <h4 class="mt-4">Academic Details</h4>
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <input type="text" class="form-control" id="course" placeholder="Enter your course name">
+        </div>
+        <div class="form-group">
+            <label>Subjects Interested:</label><br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="maths" value="AI">
+                <label class="form-check-label" for="maths">AI</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="science" value="ML">
+                <label class="form-check-label" for="science">ML</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="computer" value="Computer Science">
+                <label class="form-check-label" for="computer">Computer Science</label>
+            </div>
+        </div>
+
+        <!-- Marks Table -->
+        <h4 class="mt-4">Marks in Previous Exams</h4>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks Obtained</th>
+                        <th>Maximum Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="Subject Name"></td>
+                        <td><input type="number" class="form-control" placeholder="Marks Obtained"></td>
+                        <td><input type="number" class="form-control" placeholder="Maximum Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="Subject Name"></td>
+                        <td><input type="number" class="form-control" placeholder="Marks Obtained"></td>
+                        <td><input type="number" class="form-control" placeholder="Maximum Marks"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-group text-center mt-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
