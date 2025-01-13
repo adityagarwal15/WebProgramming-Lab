@@ -31,17 +31,6 @@ This repository serves the following purposes:
 
 In **Lab 3**, I explored **Bootstrap** to create responsive and attractive web pages. Key tasks included:
 
-- 🌐 **Web Page Design**: Used Bootstrap’s templates for clean, structured pages.
-- 🖥️ **Responsive Design**: Implemented containers and grid system for various screen sizes.
-- 📋 **Web Forms**: Built forms with interactive elements like labels, textboxes, radio buttons, and checkboxes.
-- 📊 **Tables & Buttons**: Styled tables with `.table-striped` and added various button styles.
-- 📑 **CRUD Operations**: Developed a web page demonstrating CRUD operations for employee data.
-- 🎨 **Attractive Designs**: Enhanced pages with Bootstrap components like badges, input groups, and buttons.
-
-### 📂 [Explore Lab 3 in Detail](./Lab3)
-
----
-
 ### **Lab Exercises:**
 
 - 📝 **Student Bio-data Form**: Created a form with buttons, labels, textboxes, radio buttons, and checkboxes.
@@ -50,9 +39,7 @@ In **Lab 3**, I explored **Bootstrap** to create responsive and attractive web p
 
 - 🖥️ **Split Layout Design**: Designed a top-bottom layout with input groups, buttons, and badges.
 
-### 📂 [Explore Lab Exercises in Detail](./Lab3-Exercises)
-
----
+### 📂 [Explore Lab Exercises in Detail](./LAB3)
 
 ### **Home Assignments:**
 
@@ -62,7 +49,7 @@ In **Lab 3**, I explored **Bootstrap** to create responsive and attractive web p
 
 - 🗓️ **Class Timetable**: Designed a class timetable using tables and a carousel component.
 
-### 📂 [Explore Home Assignments in Detail](./HomeAssignments)
+### 📂 [Explore Home Assignments in Detail](./LAB3)
 
 ---
 
