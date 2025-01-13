@@ -47,4 +47,4 @@ In **Lab 3**, I explored the use of **Bootstrap** to develop responsive and attr
 
 ---
 
-### 📂 [Explore the Lab Assignments in Detail](./Lab3-Assignment)
+### 📂 [Explore more Web Programming Labs](./WebProgramming-Lab)
