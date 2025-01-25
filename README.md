@@ -27,7 +27,7 @@ This repository serves the following purposes:
 
 # 🔥 **Lab Highlights**
 
-# **Lab 2: jQuery - Web Development with HTML, CSS, and JavaScript**
+# **Lab 2: jQuery**
 
 In **Lab 2**, I focused on using **jQuery** to enhance interactivity and animation in web pages, alongside utilizing **HTML** and **CSS** for the structure and styling. The tasks involved creating animations, handling user interactions, and developing dynamic web elements.
 
