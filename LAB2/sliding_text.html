@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Text on Image</title>
+    <style>
+        /* Style the body to center the content */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Set the image as background */
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('gradient.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        /* Sliding text container */
+        .sliding-text {
+            position: absolute;
+            bottom: 20px; /* Position it near the bottom of the image */
+            left: 0;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            width: 100%;
+            text-align: center;
+            transform: translateX(100%); /* Initially position text outside the image */
+            animation: slideIn 5s infinite; /* Sliding animation */
+        }
+
+        /* Keyframes for sliding text animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%); /* Start from the right */
+            }
+            50% {
+                transform: translateX(0); /* Slide to its normal position */
+            }
+            100% {
+                transform: translateX(-100%); /* Slide out to the left */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Image container -->
+    <div class="image-container">
+        <!-- Sliding text -->
+        <div class="sliding-text">
+            This is sliding text on the image!
+        </div>
+    </div>
+</body>
+</html>
