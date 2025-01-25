@@ -27,6 +27,31 @@ This repository serves the following purposes:
 
 # 🔥 **Lab Highlights**
 
+# **Lab 2: jQuery - Web Development with HTML, CSS, and JavaScript**
+
+In **Lab 2**, I focused on using **jQuery** to enhance interactivity and animation in web pages, alongside utilizing **HTML** and **CSS** for the structure and styling. The tasks involved creating animations, handling user interactions, and developing dynamic web elements.
+
+### **Lab Exercises:**
+
+- 📝 **Table with Data and Animation**: Created a web page with a 3x3 table filled with sample data and an image. Styled the rows with alternate colors and added functionality to move both the table and the image from right to left when a button is clicked.
+
+- 💻 **Basic Calculator**: Designed a simple web-based calculator to perform basic arithmetic operations (addition, subtraction, multiplication, and division). The calculator used textboxes and buttons for input and output.
+
+- 🎉 **Birthday Card Design**: Created a visually appealing birthday card-style web page with a personalized message and attractive design elements suitable for a greeting card.
+
+### 📂 [Explore Lab Exercises in Detail](./LAB2)
+
+### **Home Assignments:**
+
+- 🛒 **Bill Generator**: Developed a webpage with a dropdown list, checkboxes, and a textbox to select items and quantities. When the "Produce Bill" button is clicked, an alert displays the total amount.
+
+- ⚽ **Bouncing Ball Animation**: Implemented a bouncing ball animation using the `animate()` function in jQuery, enabling the ball to bounce up and down with smooth, continuous motion.
+
+- 🖼️ **Sliding Text on Image**: Designed a webpage displaying an image with a sliding text effect. The text slides from the right and loops back, creating a dynamic visual display.
+
+### 📂 [Explore Home Assignments in Detail](./LAB2)
+
+
 ### **Lab 3: Bootstrap - Web Development Framework**
 
 In **Lab 3**, I explored **Bootstrap** to create responsive and attractive web pages. Key tasks included:
