@@ -1,4 +1,4 @@
-# 🚀 **Web Programming Lab - 1st Semester**
+# 🚀 **Web Programming Lab - 6th Semester**
 
 Welcome to my **Web Programming Lab** repository! This repository contains all the lab exercises and projects completed during my **6th Semester** at **MIT Manipal**, focusing on **Web Programming**.
 
